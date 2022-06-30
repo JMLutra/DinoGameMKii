@@ -36,7 +36,7 @@ public class DinoGameFactory implements EntityFactory {
     @Spawns("Ground")
     public Entity newGround(SpawnData data) {
         var view = new Rectangle(1400, 10, Color.RED);
-        view.setVisible(false);
+        //view.setVisible(false);
 
 
         return FXGL.entityBuilder(data)

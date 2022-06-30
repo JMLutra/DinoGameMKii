@@ -2,10 +2,14 @@ package de.jmlutra.dinogamemkii.util;
 
 public class Background {
 
-    public static int currentBackgroundID = 1;
+    public static int currentBackgroundID = 2;
 
     public static String currentBackgroundPath() {
         return "worlds/" + currentBackgroundID + "/";
+    }
+
+    public static void changeBackground(int id) {
+        currentBackgroundID = id;
     }
 
     public static String currentBackground() {

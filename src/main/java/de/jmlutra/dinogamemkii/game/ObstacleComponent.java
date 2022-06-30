@@ -10,10 +10,6 @@ public class ObstacleComponent extends Component {
     @Override
     public void onAdded() {
         entity.getComponent(PhysicsComponent.class).setOnPhysicsInitialized(() ->  entity.getComponent(PhysicsComponent.class).setVelocityX(-350 * GamePlay.obstacleSpeed()));
-        if (entity.isType(EntityType.OBSTACLEAIR))
-        {
-            entity.getComponent(PhysicsComponent.class).setOnPhysicsInitialized(() ->  entity.getComponent(PhysicsComponent.class).setVelocityY(-2500));
-        }
     }
 
 }

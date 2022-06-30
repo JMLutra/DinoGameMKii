@@ -38,7 +38,7 @@ public class DinoGameApp extends GameApplication {
         gameSettings.setHeight(720);
         gameSettings.setTitle("Dino Game MkII");
         gameSettings.setVersion("Beta");
-        //gameSettings.setMainMenuEnabled(true);
+        gameSettings.setMainMenuEnabled(true);
         gameSettings.setTicksPerSecond(25);
 
     }
@@ -68,10 +68,10 @@ public class DinoGameApp extends GameApplication {
 
             player.getComponent(PhysicsComponent.class).setVelocityX(obstacle.getComponent(PhysicsComponent.class).getVelocityX());
 
-            /*showMessage("Game Over", () -> {
+            showMessage("Game Over", () -> {
                 getGameController().startNewGame();
                 return null;
-            });*/
+            });
 
             return null;
         });
@@ -85,10 +85,6 @@ public class DinoGameApp extends GameApplication {
 
     @Override
     protected void initInput() {
-        onKey(KeyCode.DOWN, "crouch", () -> {
-            player.getComponent(DinoComponent.class).setCrouch(true);
-            return null;
-        });
 
         onKey(KeyCode.SPACE, "jump", () -> {
             player.getComponent(DinoComponent.class).jump();
@@ -110,13 +106,13 @@ public class DinoGameApp extends GameApplication {
             Random random = new Random();
             int randomNumber = random.nextInt(100);
             if (randomNumber % 5 == 0) {
-                int randomNumber2 = random.nextInt( 1);
+                int randomNumber2 = random.nextInt( 2);
                 switch (randomNumber2) {
-                    case 0:
+                    case 1:
                         System.out.println("Obstacle1");
                         spawn("ObstacleGroundLarge", 1300, 500);
                         break;
-                    case 1:
+                    case 2:
                         System.out.println("Obstacle2");
                         spawn("ObstacleGroundSmall", 1300, 500);
                         break;

@@ -7,10 +7,4 @@ public class GamePlay {
         return gameSpeed;
     }
 
-    public static Runnable obstacles(){
-        return () -> {
-
-        };
-
-    }
 }
