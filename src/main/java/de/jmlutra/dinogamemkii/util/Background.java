@@ -8,7 +8,7 @@ public class Background {
         return "worlds/" + currentBackgroundID +"/";
     }
 
-    public static void changeBackground(int id) {
+    public static void changeBackground(int id) { //damit mans ändern kann
         currentBackgroundID = id;
     }
 
