@@ -1,0 +1,1 @@
+Im Ordner bin das .bat file ausführen

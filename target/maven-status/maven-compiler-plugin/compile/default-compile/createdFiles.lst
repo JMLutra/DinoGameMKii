@@ -1,0 +1,12 @@
+de\jmlutra\dinogamemkii\util\GamePlay.class
+de\jmlutra\dinogamemkii\game\DinoGameFactory.class
+module-info.class
+de\jmlutra\dinogamemkii\util\EntityType.class
+de\jmlutra\dinogamemkii\util\Avatar.class
+de\jmlutra\dinogamemkii\game\ObstacleComponent.class
+de\jmlutra\dinogamemkii\DinoGameApp.class
+de\jmlutra\dinogamemkii\game\DinoComponent.class
+de\jmlutra\dinogamemkii\util\Background.class
+de\jmlutra\dinogamemkii\util\Config.class
+de\jmlutra\dinogamemkii\util\Database.class
+de\jmlutra\dinogamemkii\util\Currency.class
