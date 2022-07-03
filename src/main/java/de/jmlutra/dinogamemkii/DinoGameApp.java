@@ -40,7 +40,7 @@ public class DinoGameApp extends GameApplication {
         gameSettings.setWidth(1280); // 1280x720
         gameSettings.setHeight(720);
         gameSettings.setTitle("Dino Game MkII");
-        gameSettings.setVersion("Beta");
+        gameSettings.setVersion("1.0");
         gameSettings.setMainMenuEnabled(true);
         gameSettings.setSceneFactory(new DinoSceneFactory()); //Eignes Haupt Menü
         gameSettings.setTicksPerSecond(25); //25 FPS
